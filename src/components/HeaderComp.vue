@@ -5,8 +5,8 @@ export default {};
 <template>
   <header>
     <div class="title">
-      <router-link id="title">
-        <h1>IMovies</h1>
+      <router-link to="/" id="title">
+        <h1><span>IM</span>ovies</h1>
       </router-link>
     </div>
 
@@ -18,10 +18,18 @@ export default {};
   </header>
 </template>
 
-<style>
+<style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Baloo+2&display=swap");
-
+span{
+  color: pink;
+}
 .title {
   font-family: "Baloo 2", cursive;
+  
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 </style>

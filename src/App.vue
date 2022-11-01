@@ -9,10 +9,8 @@ export default {
 </script>
 
 <template>
-  <div id="app">
-    <HeaderComp />
-    <RouterView />
-  </div>
+  <HeaderComp />
+  <RouterView />
 </template>
 
 <style></style>
