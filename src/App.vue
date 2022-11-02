@@ -1,15 +1,15 @@
 <script>
-import HeaderComp from "@/components/HeaderComp.vue";
+import HeaderCompv from "@/components/HeaderCompv.vue";
 
 export default {
   components: {
-    HeaderComp,
+    HeaderCompv,
   },
 };
 </script>
 
 <template>
-  <HeaderComp />
+  <HeaderCompv />
   <RouterView />
 </template>
 
