@@ -39,7 +39,6 @@ header {
   overflow: hidden;
   background: url(https://unsplash.imgix.net/45/ZLSw0SXxThSrkXRIiCdT_DSC_0345.jpg?q=75&w=1080&h=1080&fit=max&fm=jpg&auto=format&s=857f07b76abac23a7fb7161cc7b12a46)
     center no-repeat;
-  /* Image Credit: Unsplash.me */
   background-size: cover;
 }
 header .content {
