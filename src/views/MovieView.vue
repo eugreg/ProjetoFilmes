@@ -1,5 +1,3 @@
 <script></script>
 
-<template>
-    movie haha
-</template>
+<template>movie haha</template>
