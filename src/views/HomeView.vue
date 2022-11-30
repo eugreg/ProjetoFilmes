@@ -1,6 +1,7 @@
 <script setup></script>
 
 <template>
+  <div class="titulo"><h1>Populares</h1></div>
   <div class="container">
     <img
       src="https://i.pinimg.com/550x/d9/ee/de/d9eede5be6963701f136bc622f1f2b96.jpg"
@@ -66,18 +67,7 @@
       src="https://i.pinimg.com/550x/d9/ee/de/d9eede5be6963701f136bc622f1f2b96.jpg"
       alt=""
     />
-    <img
-      src="https://i.pinimg.com/550x/d9/ee/de/d9eede5be6963701f136bc622f1f2b96.jpg"
-      alt=""
-    />
-    <img
-      src="https://i.pinimg.com/550x/d9/ee/de/d9eede5be6963701f136bc622f1f2b96.jpg"
-      alt=""
-    />
-    <img
-      src="https://i.pinimg.com/550x/d9/ee/de/d9eede5be6963701f136bc622f1f2b96.jpg"
-      alt=""
-    />
+
   </div>
 </template>
 
@@ -120,5 +110,10 @@ img {
   align-items: center;
   justify-items: stretch;
   align-content: stretch;
+}
+.titulo{
+  font-family: sans-serif;
+  margin-left: 10px;
+  color: black;
 }
 </style>

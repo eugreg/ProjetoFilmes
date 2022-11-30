@@ -1,3 +1,73 @@
 <script setup></script>
 
-<template>actors haha</template>
+<template>
+  <div class="search">
+    <input type="text" />
+  </div>
+  <div class="container">
+    <img
+      src="https://i.pinimg.com/550x/d9/ee/de/d9eede5be6963701f136bc622f1f2b96.jpg"
+      alt=""
+    />
+    <img
+      src="https://i.pinimg.com/550x/d9/ee/de/d9eede5be6963701f136bc622f1f2b96.jpg"
+      alt=""
+    />
+    <img
+      src="https://i.pinimg.com/550x/d9/ee/de/d9eede5be6963701f136bc622f1f2b96.jpg"
+      alt=""
+    />
+    <img
+      src="https://i.pinimg.com/550x/d9/ee/de/d9eede5be6963701f136bc622f1f2b96.jpg"
+      alt=""
+    />
+    <img
+      src="https://i.pinimg.com/550x/d9/ee/de/d9eede5be6963701f136bc622f1f2b96.jpg"
+      alt=""
+    />
+    <img
+      src="https://i.pinimg.com/550x/d9/ee/de/d9eede5be6963701f136bc622f1f2b96.jpg"
+      alt=""
+    />
+    <img
+      src="https://i.pinimg.com/550x/d9/ee/de/d9eede5be6963701f136bc622f1f2b96.jpg"
+      alt=""
+    />
+    <img
+      src="https://i.pinimg.com/550x/d9/ee/de/d9eede5be6963701f136bc622f1f2b96.jpg"
+      alt=""
+    />
+    <img
+      src="https://i.pinimg.com/550x/d9/ee/de/d9eede5be6963701f136bc622f1f2b96.jpg"
+      alt=""
+    />
+    <img
+      src="https://i.pinimg.com/550x/d9/ee/de/d9eede5be6963701f136bc622f1f2b96.jpg"
+      alt=""
+    />
+    <img
+      src="https://i.pinimg.com/550x/d9/ee/de/d9eede5be6963701f136bc622f1f2b96.jpg"
+      alt=""
+    />
+    <img
+      src="https://i.pinimg.com/550x/d9/ee/de/d9eede5be6963701f136bc622f1f2b96.jpg"
+      alt=""
+    />
+    <img
+      src="https://i.pinimg.com/550x/d9/ee/de/d9eede5be6963701f136bc622f1f2b96.jpg"
+      alt=""
+    />
+    <img
+      src="https://i.pinimg.com/550x/d9/ee/de/d9eede5be6963701f136bc622f1f2b96.jpg"
+      alt=""
+    />
+    <img
+      src="https://i.pinimg.com/550x/d9/ee/de/d9eede5be6963701f136bc622f1f2b96.jpg"
+      alt=""
+    />
+    <img
+      src="https://i.pinimg.com/550x/d9/ee/de/d9eede5be6963701f136bc622f1f2b96.jpg"
+      alt=""
+    />
+  </div>
+</template>
