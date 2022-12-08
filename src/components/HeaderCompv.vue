@@ -1,5 +1,31 @@
 <script>
-
+import { mapStores, mapState, mapActions } from "pinia";
+import { useGenreStore } from "@/stores/genres";
+export default {
+  data() {
+    return {
+      genero: "",
+    };
+  },
+  async created() {
+    this.generos = await this.getAllGenres();
+  },
+  computed: {
+  
+    ...mapStores(useGenreStore),
+ 
+    ...mapState(useGenreStore, ["genres"]),
+  },
+  methods: {
+    ...mapActions(useGenreStore, ["getAllGenres"]),
+    go() {
+      this.$router.push(`/filmes_por_genero/${this.genero}`);
+    },
+    getProfileUrl(avatar_path) {
+      return `https://image.tmdb.org/t/p/w500${avatar_path}`;
+    },
+  },
+};
 </script>
 
 <template>
@@ -19,9 +45,18 @@
     </header>
     <section class="site">
       <nav>
-        <router-link class="routerlink" to="/movie">Filmes</router-link>
-        <router-link class="routerlink" to="/actors">Atores</router-link>
-        <router-link class="routerlink" to="/category">Categorias</router-link>
+        <router-link class="routerlink" to="/movie">Lançamentos</router-link>
+        <select v-model="genero" @change="go" class="select-cabecalho">
+            <option value="" disabled>Categorias</option>
+            <option
+              v-for="genero of genres"
+              :key="genero.id"
+              :value="genero.id"
+            >
+              {{ genero.name }}
+            </option>
+          </select>
+     
       </nav>
     </section>
   </body>

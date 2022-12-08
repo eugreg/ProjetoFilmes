@@ -9,7 +9,7 @@ export default {
   },
   methods: {
     retornaUrlFilme(id) {
-      return `/filmes/${id}`;
+      return `/filme/${id}`;
     },
   },
 };
