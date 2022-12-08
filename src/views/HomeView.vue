@@ -1,75 +1,39 @@
-<script setup></script>
+<script>
+import PictureCard from "../components/PictureCard.vue";
+import FilmeApi from "../api/filme.js";
+const filmeapi = new FilmeApi();
+export default {
+  components: { PictureCard },
+  data() {
+    return {
+      filmes: [],
+    };
+  },
+  async created() {
+    this.filmes = await filmeapi.BuscaTodosOsFilmes();
+  },
+  methods: {
+    getPosterUrl(posterPath) {
+      return `https://image.tmdb.org/t/p/w500${posterPath}`;
+    },
+  },
+};
+</script>
 
 <template>
-  <div class="titulo"><h1>Populares</h1></div>
-  <div class="container">
-    <img
-      src="https://i.pinimg.com/550x/d9/ee/de/d9eede5be6963701f136bc622f1f2b96.jpg"
-      alt=""
-    />
-    <img
-      src="https://i.pinimg.com/550x/d9/ee/de/d9eede5be6963701f136bc622f1f2b96.jpg"
-      alt=""
-    />
-    <img
-      src="https://i.pinimg.com/550x/d9/ee/de/d9eede5be6963701f136bc622f1f2b96.jpg"
-      alt=""
-    />
-    <img
-      src="https://i.pinimg.com/550x/d9/ee/de/d9eede5be6963701f136bc622f1f2b96.jpg"
-      alt=""
-    />
-    <img
-      src="https://i.pinimg.com/550x/d9/ee/de/d9eede5be6963701f136bc622f1f2b96.jpg"
-      alt=""
-    />
-    <img
-      src="https://i.pinimg.com/550x/d9/ee/de/d9eede5be6963701f136bc622f1f2b96.jpg"
-      alt=""
-    />
-    <img
-      src="https://i.pinimg.com/550x/d9/ee/de/d9eede5be6963701f136bc622f1f2b96.jpg"
-      alt=""
-    />
-    <img
-      src="https://i.pinimg.com/550x/d9/ee/de/d9eede5be6963701f136bc622f1f2b96.jpg"
-      alt=""
-    />
-    <img
-      src="https://i.pinimg.com/550x/d9/ee/de/d9eede5be6963701f136bc622f1f2b96.jpg"
-      alt=""
-    />
-    <img
-      src="https://i.pinimg.com/550x/d9/ee/de/d9eede5be6963701f136bc622f1f2b96.jpg"
-      alt=""
-    />
-    <img
-      src="https://i.pinimg.com/550x/d9/ee/de/d9eede5be6963701f136bc622f1f2b96.jpg"
-      alt=""
-    />
-    <img
-      src="https://i.pinimg.com/550x/d9/ee/de/d9eede5be6963701f136bc622f1f2b96.jpg"
-      alt=""
-    />
-    <img
-      src="https://i.pinimg.com/550x/d9/ee/de/d9eede5be6963701f136bc622f1f2b96.jpg"
-      alt=""
-    />
-    <img
-      src="https://i.pinimg.com/550x/d9/ee/de/d9eede5be6963701f136bc622f1f2b96.jpg"
-      alt=""
-    />
-    <img
-      src="https://i.pinimg.com/550x/d9/ee/de/d9eede5be6963701f136bc622f1f2b96.jpg"
-      alt=""
-    />
-    <img
-      src="https://i.pinimg.com/550x/d9/ee/de/d9eede5be6963701f136bc622f1f2b96.jpg"
-      alt=""
-    />
-
+  <div class="main">
+    
+    <div class="container">
+      <PictureCard
+        v-for="filme of filmes"
+        :key="filme.id"
+        :picture_src="getPosterUrl(filme.poster_path)"
+        :pic_link="filme"
+      />
+    </div>
   </div>
 </template>
+
 
 <style>
 body {
